@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="templates/style.css">
+    <title>OFC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <h2>Enter data:</h2>
+            <form action = '{{  url_for("results")  }}' method = "post">
+                <!-- N:<br> -->
+                <input type="text" name="n" placeholder="Number of Tiles"><br>
+                <!-- A:<br> -->
+                <input type="text" name="max_crit" placeholder="Maximum Critical Value"><br>
+                <!-- Steps:<br> -->
+                <input type="text" name="steps" placeholder="Maximum Number of Steps"><br>
+                <!-- Force:<br> -->
+                <input type="text" name="force" placeholder="Force Added per step(0.0 - 4.0)"><br>
+                <input type="text" name="max_start_force" placeholder="Maximum Starting Force (0.0 - 4.0)"><br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
