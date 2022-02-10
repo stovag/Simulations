@@ -46,7 +46,7 @@ def multinodes(n):
     ypoints = np.array(infectionRate)
     plt.plot(xpoints, ypoints)
     n = str(n)
-    plt.savefig("Theo/lab4/infectionrate"+n+".jpg")
+    #plt.savefig("Theo/lab4/infectionrate"+n+".jpg") disabled since file structure will change
     plt.show()
 
 multinodes(50)
